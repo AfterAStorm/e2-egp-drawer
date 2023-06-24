@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>E2 EGP Generator</title>
+        <link rel="stylesheet" href="index.css">
+        <script type="module" src="js/editor/editor.js" defer></script>
+    </head>
+    <body>
+        <canvas id="editor" width="512" height="512"></canvas>
+        <div id="editor-side-panel" class="editor-panel">
+            <h1>EGP Editor</h1>
+            <h1 style="font-size: small; margin: 0; height: 1.5rem">by AfterAStorm</h1>
+            <h2>Options</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="OPTION_enableGrid" checked>
+                    <label for="OPTION_enableGrid">Enable Grid</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="OPTION_enableGridLines" checked>
+                    <label for="OPTION_enableGridLines">Show Grid Lines</label>
+                </li>
+                <li>
+                    <input type="number" id="OPTION_gridSize" min="1" max="512" minlength="1" value="16">
+                    <label for="OPTION_gridSize"> Grid Size (like 2, 4, 8, 16, 32, 64, 128, 256)</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="OPTION_borderCollisions">
+                    <label for="OPTION_borderCollisions">Border Collisions (rudimentary)</label>
+                </li>
+            </ul>
+            <h2>Properties</h2>
+            <ul id="element-properties">
+
+            </ul>
+            <h2>Elements</h2>
+            <ul id="element-list">
+
+            </ul>
+        </div>
+        <div id="editor-bottom-panel" class="editor-panel">
+            
+        </div>
+    </body>
+</html>
